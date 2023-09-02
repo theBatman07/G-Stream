@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        android:title="@string/pref_category_app_updates">
+
+        <Preference
+            android:icon="@drawable/netflix_download"
+            android:key="@string/apk_installer_key"
+            android:title="@string/apk_installer_settings"
+            android:summary="@string/apk_installer_settings_des"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/pref_category_backup">
+        <Preference
+            android:icon="@drawable/baseline_save_as_24"
+            android:key="@string/backup_key"
+            android:title="@string/backup_settings" />
+
+        <Preference
+            android:icon="@drawable/baseline_restore_page_24"
+            android:key="@string/restore_key"
+            android:title="@string/restore_settings" />
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/pref_category_extensions">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_baseline_extension_24"
+            android:key="@string/auto_update_plugins_key"
+            android:title="@string/automatic_plugin_updates" />
+        
+        <Preference
+            android:icon="@drawable/ic_baseline_extension_24"
+            android:key="@string/auto_download_plugins_key"
+            android:title="@string/automatic_plugin_download"
+            android:summary="@string/automatic_plugin_download_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/pref_category_actions">
+        <Preference
+            android:icon="@drawable/baseline_description_24"
+            android:key="@string/show_logcat_key"
+            android:title="@string/show_log_cat" />
+        <Preference
+            android:icon="@drawable/ic_baseline_construction_24"
+            android:title="@string/redo_setup_process"
+            app:key="@string/redo_setup_key" />
+    </PreferenceCategory>
+</PreferenceScreen>
